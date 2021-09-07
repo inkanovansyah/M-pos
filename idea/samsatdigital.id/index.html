@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aplikasi untuk memudahkan masyarakat membayar pajak kendaraan bermotor secara aman dan mudah"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="signal, kendaraan bermotor, membayar pajak, pajak kendaraan bermotor, pajak kendaraan"
+    />
+    <meta property="og:title" content="Samsat Digital Nasional" />
+    <meta
+      property="og:description"
+      content="Aplikasi untuk memudahkan masyarakat membayar pajak kendaraan bermotor secara aman dan mudah"
+    />
+    <meta property="og:image" content="/assets/img/LOGO_SIGNAL_footer.png" />
+    <meta property="og:url" content="https://samsatdigital.id/" />
+    <meta property="og:site_name" content="Samsat Digital Nasional" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/assets/img/LOGO_SIGNAL_footer.png" />
+    <meta
+      name="twitter:description"
+      content="Aplikasi untuk memudahkan masyarakat membayar pajak kendaraan bermotor secara aman dan mudah"
+    />
+    <meta name="twitter:site" content="@SamsatDigital" />
+    <meta name="twitter:creator" content="@SamsatDigital" />
+
+    <title>Samsat Digital Nasional</title>
+    <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon" />
+    <meta
+      name="facebook-domain-verification"
+      content="335p0c5459l93hyomsc73dbc1kj1iy"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EBJGC58H6D"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-EBJGC58H6D");
+    </script>
+    <!-- Global site tag (gtag.js) - Google Ads: 343601362 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-343601362"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-343601362");
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "317901319980892");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=317901319980892&ev=PageView
+&noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito Sans:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <!-- style.css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img
+            class="img-fluid logo"
+            src="/assets/img/LOGO_SIGNAL.png"
+            alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="iconify" data-icon="bi:list" data-inline="false"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tutorial">Tutorial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-download px-3" href="#download"
+                >Download</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#informasi">Informasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/hubungi-kami">Hubungi Kami</a>
+            </li>
+          </ul>
+          <form class="d-flex mb-3 mb-lg-0">
+            <input
+              type="text"
+              class="form-control search"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="search-input"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--  -->
+    <!-- Messenger Plugin Obrolan Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin Obrolan code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "104408621886277");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v11.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/id_ID/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+    <!-- wa button -->
+    <!-- <div class="wa-btn">
+      <a
+        href="https://api.whatsapp.com/send?phone=+6281212820899&text="
+        target="_blank"
+      >
+        <img class="wa-img img-fluid" src="/assets/img/wa-btn.png"
+      /></a>
+    </div> -->
+    <!--  -->
+    <!--  -->
+    <div class="container-fluid banner">
+      <div class="row banner-row align-items-center justify-content-center">
+        <div class="col-md-5 banner-text">
+          <h1 class="headline">
+            Dimana Saja, Kapan Saja, Dalam Satu Genggaman dan One Stop Service
+          </h1>
+          <div class="my-4 deskripsi">
+            SIGNAL adalah samsat digital nasional, sebuah aplikasi untuk
+            memudahkan masyarakat membayar pajak kendaraan bermotor secara aman
+            dan mudah
+          </div>
+          <div class="d-flex justify-content-md-start justify-content-center">
+            <!-- <a href="#">
+              <img
+                class="img-fluid me-4 mb-2"
+                src="assets/img/download-appstore.png"
+                alt="download-appstore"
+              />
+            </a> -->
+            <a
+              href="https://play.google.com/store/apps/details?id=app.signal.id"
+              target="_blank"
+            >
+              <img
+                class="img-fluid mb-2"
+                src="assets/img/download-googleplay.png"
+                alt="download-googleplay"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="col-xxl-auto col-7">
+          <img
+            class="img-fluid banner-img w-100"
+            src="assets/img/hp.png"
+            alt="hp"
+          />
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <div class="container-fluid tutor my-lg-0 my-5" id="tutorial">
+      <div class="row tutor-row align-items-center justify-content-evenly">
+        <div class="col-auto mb-md-0 mb-5">
+          <img class="img-fluid" src=imgs/polisi.png alt="img-polisi" />
+        </div>
+        <div class="col-xl-7">
+          <h2 class="fw-bold">Tutorial SIGNAL</h2>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Cara mendaftar di SIGNAL
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse container-fluid"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div
+                  class="accordion-body px-0 row pt-0 justify-content-between align-items-center"
+                >
+                  <div class="col-xl-6 col">
+                    Daftarkan NIK dan nomor seluler anda untuk pembuatan akun
+                    SIGNAL
+                  </div>
+                  <div class="col-xl-auto">
+                    <a href="/tutorial.html#infoDetail1" class="btn info-detail"
+                      >Info detail</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Cara mendaftarkan kendaraan bermotor
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse container-fluid"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div
+                  class="accordion-body px-0 row pt-0 justify-content-between align-items-center"
+                >
+                  <div class="col-xl-6 col">
+                    Masukan NRKB (Nomor Registrasi Kendaraan Bermotor) anda dan
+                    verifikasi
+                  </div>
+                  <div class="col-xl-auto">
+                    <a href="/tutorial.html#infoDetail2" class="btn info-detail"
+                      >Info detail</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Cara Pembayaran
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse container-fluid"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div
+                  class="accordion-body px-0 row pt-0 justify-content-between align-items-center"
+                >
+                  <div class="col-xl-6 col">
+                    Lakukan pembayaran menggunakan cara bayar yang tersedia
+                  </div>
+                  <div class="col-xl-auto">
+                    <a
+                      href="/tutorial.html#infoDetail3"
+                      class="btn info-detail"
+                      id="infoDetail3"
+                      >Info detail</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end">
+            <a href="/tutorial.html"
+              >Selengkapnya
+              <span
+                class="iconify"
+                data-icon="akar-icons:chevron-right"
+                data-inline="false"
+              ></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <div
+      class="container-md container-fluid download my-5 my-lg-0"
+      id="download"
+    >
+      <div class="row download-row align-items-center justify-content-evenly">
+        <div class="col-lg-5 col-8">
+          <img
+            class="img-fluid"
+            src="assets/img/img_unduh.png"
+            alt="img-unduh"
+          />
+        </div>
+        <div class="col-lg-5">
+          <h2 class="headline">
+            Gunakan aplikasi SIGNAL sekarang juga
+          </h2>
+          <h4 class="my-3 fw-normal">
+            Dimana Saja, Kapan Saja, Dalam Satu Genggaman dan One Stop Service
+          </h4>
+          <div class="mb-3">
+            Download SIGNAL dan buat akunnya menggunakan smartphone anda
+            sekarang
+          </div>
+          <div class="d-flex justify-content-md-start justify-content-center">
+            <!-- <a href="#">
+              <img
+                class="img-fluid me-4 mb-2"
+                src="assets/img/download-appstore.png"
+                alt="download-appstore"
+              />
+            </a> -->
+            <a
+              href="https://play.google.com/store/apps/details?id=app.signal.id"
+              target="_blank"
+            >
+              <img
+                class="img-fluid mb-2"
+                src="assets/img/download-googleplay.png"
+                alt="download-googleplay"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <div class="container kabar-korlantas my-lg-0 my-5" id="informasi">
+      <div class="row kabar-korlantas-row align-items-center">
+        <div class="col p-0">
+          <div class="container-fluid">
+            <div class="row justify-content-center mb-4">
+              <div class="col-auto">
+                <h2 class="fw-bold">Informasi</h2>
+              </div>
+            </div>
+            <div
+              class="row row-cols-1 row-cols-md-3 g-5 justify-content-center"
+            >
+              <div class="col-auto">
+                <div class="card">
+                  <img
+                    src="https://akcdn.detik.net.id/community/media/visual/2019/06/26/90276df1-84c5-4107-b90b-1962518038f3_169.jpeg?w=700&q=90"
+                    class="card-img-top thumbnail"
+                    alt="thumbnail"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title judul">
+                      Tarif Perpanjang STNK Online Pakai Samsat Digital, Bayar
+                      Rp 10.000
+                    </h5>
+                    <h6 class="card-subtitle tanggal mb-2">25-08-2021</h6>
+                    <p class="card-text konten">
+                      Bulan depan, Korps Lalu Lintas (Korlantas) Polri bakal
+                      meluncurkan aplikasi Signal (Samsat Digital Nasional)
+                      untuk pelayanan perpanjang STNK secara online. Bisa
+                      perpanjang STNK online, berapa biaya pakai aplikasi
+                      Signal?
+                    </p>
+                    <a
+                      href="/artikel/tarif-perpanjang-stnk-online-pakai-samsat-digital-bayar-rp-10000.html"
+                      class=""
+                      >Selengkapnya
+                      <span
+                        class="iconify"
+                        data-icon="akar-icons:chevron-right"
+                        data-inline="false"
+                      ></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="card">
+                  <img
+                    src="https://akcdn.detik.net.id/community/media/visual/2020/06/04/warga-manfaatkan-layanan-drive-thru-di-samsat-jakarta-timur-2.jpeg?w=700&q=90"
+                    class="card-img-top thumbnail"
+                    alt="thumbnail"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title judul">
+                      Mulai Agustus 2021 Bayar Pajak Kendaraan Bisa Digital dan
+                      Gak Perlu Datang ke Samsat
+                    </h5>
+                    <h6 class="card-subtitle tanggal mb-2">21-08-2021</h6>
+                    <p class="card-text konten">
+                      Seiring dengan perkembangan zaman yang serba digital,
+                      Korlantas Polri terus berupaya untuk meningkatkan
+                      pelayanan kepada masyarakat dengan memperkenalkan aplikasi
+                      generasi kedua Samsat Digital Nasional (Signal) setelah
+                      memperkenalkan Samsat Online Nasional (Samolnas).
+                    </p>
+                    <a
+                      href="/artikel/mulai-agustus-2021-bayar-pajak-kendaraan-bisa-digital-dan-gak-perlu-datang-ke-samsat.html"
+                      class=""
+                      >Selengkapnya
+                      <span
+                        class="iconify"
+                        data-icon="akar-icons:chevron-right"
+                        data-inline="false"
+                      ></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="card">
+                  <img
+                    src="https://akcdn.detik.net.id/community/media/visual/2020/06/04/warga-ramai-bayar-pajak-di-samsat-jakarta-timur-6.jpeg?w=700&q=90"
+                    class="card-img-top thumbnail"
+                    alt="thumbnail"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title judul">
+                      Cara Polisi Sempurnakan Samsat Digital, Demi Masyarakat
+                      Bayar Pajak di Mana Aja
+                    </h5>
+                    <h6 class="card-subtitle tanggal mb-2">21-08-2021</h6>
+                    <p class="card-text konten">
+                      Korlantas Polri kembali memperkenalkan Aplikasi inovasi
+                      ke-3 mereka untuk memuluskan 100 hari Program Prioritas
+                      Kapolri, setelah sebelumnya diluncurkan Electronic Traffic
+                      Law Enforcementsecara Nasional dan Aplikasi SINAR (SIM
+                      Nasional Presisi), kini Korlantas memperkenalkan Signal
+                      (Samsat Digital Nasional).
+                    </p>
+                    <a
+                      href="/artikel/cara-polisi-sempurnakan-samsat-digital-demi-masyarakat-bayar-pajak-di-mana-aja.html"
+                      class=""
+                      >Selengkapnya
+                      <span
+                        class="iconify"
+                        data-icon="akar-icons:chevron-right"
+                        data-inline="false"
+                      ></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4 justify-content-center">
+              <div class="col-auto">
+                <a href="/informasi" class="btn info-lainnya">
+                  Informasi lainnya
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!--  -->
+    <footer>
+      <div class="container-fluid footer">
+        <div class="row justify-content-between align-items-start">
+          <div class="col-md-5">
+            <div class="d-flex align-items-center">
+              <img
+                class="img-fluid logo"
+                src="/assets/img/LOGO_SIGNAL_footer.png"
+                alt="logo"
+              />
+              <div
+                class="vl mx-3"
+                style="border-left: 1px solid white; height: 29px;"
+              ></div>
+              <div class="" style="font-weight: 800; font-size: 16px;">
+                Dimana Saja, Kapan Saja, Dalam Satu Genggaman dan One Stop
+                Service
+              </div>
+            </div>
+          </div>
+          <div class="col-auto my-3 my-sm-0">
+            <div class="container-fluid p-0">
+              <div class="row mb-2">
+                <div class="col">
+                  <a href="/mengenai-signal">Mengenai SIGNAL</a>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">
+                  <a href="/faq">FAQ</a>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">
+                  <a href="/kantor-samsat">Kantor Korlantas</a>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">
+                  <a href="/hubungi-kami">Hubungi Kami</a>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">
+                  <a href="/privacypolicy">Kebijakan Privasi</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex">
+              <a
+                href="https://www.facebook.com/samsatdigital.id"
+                class="socmed"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span
+                  class="iconify"
+                  data-icon="bx:bxl-facebook"
+                  data-inline="false"
+                ></span>
+              </a>
+              <a
+                href="https://twitter.com/SamsatDigital"
+                class="socmed"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span
+                  class="iconify"
+                  data-icon="ant-design:twitter-outlined"
+                  data-inline="false"
+                ></span>
+              </a>
+              <a
+                href="https://instagram.com/samsatdigital"
+                class="socmed"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span
+                  class="iconify"
+                  data-icon="akar-icons:instagram-fill"
+                  data-inline="false"
+                ></span>
+              </a>
+              <a
+                href="https://vt.tiktok.com/ZSJCN65dp/"
+                class="socmed"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span
+                  class="iconify"
+                  data-icon="cib:tiktok"
+                  data-inline="false"
+                ></span>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCtK-XNKxnBr-U8-qoLWP5SA"
+                class="socmed"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span
+                  class="iconify"
+                  data-icon="ant-design:youtube-filled"
+                  data-inline="false"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid copyright border-top">
+        <div class="row justify-content-center">
+          <div class="col-sm-auto col">
+            © Samsat Digital Nasional 2021 All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  -->
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Iconify -->
+<script src="js/iconify.min.js"></script>
+    <!-- script.js -->
+<script src="js/script.js"></script>
+  </body>
+</html>
