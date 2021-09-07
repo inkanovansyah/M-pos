@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, shrink-to-fit=9">
+
+	<title>Taking Order</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" type="text/css" href="css/css2?family=Paytone+One&display=swap">
+	<link rel="icon" type="image/png" href="http://frontend-taking-order.jaring.host/images/fav.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" type="text/css"
+		href="css/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="css/unicons.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/night-mode.css">
+	<link rel="stylesheet" type="text/css" href="css/custome.css">
+	<link rel="stylesheet" type="text/css" href="css/step-wizard.css">
+
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+</head>
+
+<body>
+	<!-- <div id="category_model" class="header-cate-model main-gambo-model modal fade" tabindex="-1" role="dialog" aria-modal="false">
+		<div class="modal-dialog category-area" role="document">
+			<div class="category-area-inner">
+				<div class="modal-header">
+					<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+						<i class="uil uil-multiply"></i>
+					</button>
+				</div>
+				<div class="category-model-content modal-content">
+					<div class="cate-header">
+						<h4>Select Category</h4>
+					</div>
+					<ul class="category-by-cat">
+						<li>
+							<a href="#" class="single-cat-item">
+								<div class="icon">
+									<img src=imgs/icon-1.svg alt="">
+								</div>
+								<div class="text"> Fruits and Vegetables </div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="single-cat-item">
+								<div class="icon">
+									<img src=imgs/icon-2.svg alt="">
+								</div>
+								<div class="text"> Grocery & Staples </div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="single-cat-item">
+								<div class="icon">
+									<img src=imgs/icon-3.svg alt="">
+								</div>
+								<div class="text"> Dairy & Eggs </div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="single-cat-item">
+								<div class="icon">
+									<img src=imgs/icon-4.svg alt="">
+								</div>
+								<div class="text"> Beverages </div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="single-cat-item">
+								<div class="icon">
+									<img src=imgs/icon-5.svg alt="">
+								</div>
+								<div class="text"> Snacks </div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="single-cat-item">
+								<div class="icon">
+									<img src=imgs/icon-6.svg alt="">
+								</div>
+								<div class="text"> Home Care </div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="single-cat-item">
+								<div class="icon">
+									<img src=imgs/icon-7.svg alt="">
+								</div>
+								<div class="text"> Noodles & Sauces </div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="single-cat-item">
+								<div class="icon">
+									<img src=imgs/icon-8.svg alt="">
+								</div>
+								<div class="text"> Personal Care </div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="single-cat-item">
+								<div class="icon">
+									<img src=imgs/icon-9.svg alt="">
+								</div>
+								<div class="text"> Pet Care </div>
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="morecate-btn"><i class="uil uil-apps"></i>More Categories</a>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+
+	<div id="search_model" class="header-cate-model main-gambo-model modal fade" tabindex="-1" role="dialog"
+		aria-modal="false">
+		<div class="modal-dialog search-ground-area" role="document">
+			<div class="category-area-inner">
+				<div class="modal-header">
+					<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+						<i class="uil uil-multiply"></i>
+					</button>
+				</div>
+				<div class="category-model-content modal-content">
+					<div class="search-header">
+						<form action="#">
+							<input type="search" placeholder="Search for products...">
+							<button type="submit"><i class="uil uil-search"></i></button>
+						</form>
+					</div>
+					<div class="search-by-cat">
+						<a href="#" class="single-cat">
+							<div class="icon">
+								<img src=imgs/icon-1.svg alt="">
+							</div>
+							<div class="text">
+								Fruits and Vegetables
+							</div>
+						</a>
+						<a href="#" class="single-cat">
+							<div class="icon">
+								<img src=imgs/icon-2.svg alt="">
+							</div>
+							<div class="text"> Grocery & Staples </div>
+						</a>
+						<a href="#" class="single-cat">
+							<div class="icon">
+								<img src=imgs/icon-3.svg alt="">
+							</div>
+							<div class="text"> Dairy & Eggs </div>
+						</a>
+						<a href="#" class="single-cat">
+							<div class="icon">
+								<img src=imgs/icon-4.svg alt="">
+							</div>
+							<div class="text"> Beverages </div>
+						</a>
+						<a href="#" class="single-cat">
+							<div class="icon">
+								<img src=imgs/icon-5.svg alt="">
+							</div>
+							<div class="text"> Snacks </div>
+						</a>
+						<a href="#" class="single-cat">
+							<div class="icon">
+								<img src=imgs/icon-6.svg alt="">
+							</div>
+							<div class="text"> Home Care </div>
+						</a>
+						<a href="#" class="single-cat">
+							<div class="icon">
+								<img src=imgs/icon-7.svg alt="">
+							</div>
+							<div class="text"> Noodles & Sauces </div>
+						</a>
+						<a href="#" class="single-cat">
+							<div class="icon">
+								<img src=imgs/icon-8.svg alt="">
+							</div>
+							<div class="text"> Personal Care </div>
+						</a>
+						<a href="#" class="single-cat">
+							<div class="icon">
+								<img src=imgs/icon-9.svg alt="">
+							</div>
+							<div class="text"> Pet Care </div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="bs-canvas bs-canvas-left position-fixed bg-cart h-100">
+		<div class="bs-canvas-header side-cart-header p-3 ">
+			<div class="d-inline-block  main-cart-title">Keranjang <span id="countData"></span></div>
+			<button type="button" class="bs-canvas-close close" aria-label="Close"><i
+					class="uil uil-multiply"></i></button>
+		</div>
+
+		<div class="bs-canvas-body">
+			<div id="cart" class="side-cart-items">
+
+			</div>
+		</div>
+		<div class="bs-canvas-footer">
+			<!-- <div class="cart-total-dil saving-total ">
+				<h4>Total Saving</h4>
+				<span>$11</span>
+			</div> -->
+			<div class="main-total-cart">
+				<h2>Total</h2>
+				<span id="total"></span>
+			</div>
+			<div class="checkout-cart">
+				<a href="#" class="promo-code"></a>
+				<div id="btnCheckout"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="bs-canvas bs-canvas-right position-fixed bg-cart h-100">
+		<div class="bs-canvas-header side-cart-header p-3 ">
+			<div class="d-inline-block  main-cart-title">Filter</div>
+			<button type="button" class="bs-canvas-close close" aria-label="Close"><i
+					class="uil uil-multiply"></i></button>
+		</div>
+
+		<div class="bs-canvas-body filter-body">
+			<form id="form_filter">
+				<div class="filter-items">
+					<div class="filtr-cate-title">
+						<h4>Daerah</h4>
+					</div>
+					<div class="filter-item-body scrollstyle_4">
+						<select class="form-control" id="province">
+							<option selected disabled value="">Semua Provinsi</option>
+						</select>
+						<br>
+						<select class="form-control" id="city">
+							<option selected disabled value="">Semua Kota/Kabupaten</option>
+						</select>
+						<br>
+						<select class="form-control" id="district">
+							<option selected disabled value="">Semua Kecamatan</option>
+						</select>
+						<br>
+						<select class="form-control" id="area">
+							<option selected disabled value="">Semua Desa/Kelurahan</option>
+						</select>
+					</div>
+				</div>
+				<div class="filter-items">
+					<div class="filtr-cate-title">
+						<h4>Tipe Pasar</h4>
+					</div>
+					<div class="filter-item-body scrollstyle_4">
+						<div class="cart-radio">
+							<ul id="market_type">
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="filter-items">
+					<div class="filtr-cate-title">
+						<h4>Categori Pasar</h4>
+					</div>
+					<div class="filter-item-body scrollstyle_4">
+						<div class="cart-radio">
+							<ul id="market_category">
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="filter-items">
+					<div class="filtr-cate-title">
+						<h4>Kelas Pasar</h4>
+					</div>
+					<div class="filter-item-body scrollstyle_4">
+						<div class="cart-radio">
+							<ul id="market_class">
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="filter-items">
+					<div class="filtr-cate-title">
+						<h4>Jenis Pasar</h4>
+					</div>
+					<div class="filter-item-body scrollstyle_4">
+						<div class="cart-radio">
+							<ul id="market_purpose">
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="filter-items">
+					<button type="button" onclick="submitFilter();"
+						class="bs-canvas-close btn btn-success ">Apply</button>
+					<button type="button" onclick="resetFilter();" class="bs-canvas-close btn btn-danger">Reset</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<header class="header clearfix">
+		<div class="top-header-group">
+			<!-- <div class="top-header">
+			<div class="res_main_logo">
+				<a href="http://frontend-taking-order.jaring.host"><img src=imgs/jsa-logo-scaled.png alt=""></a>
+			</div>
+			<div class="main_logo" id="logo">
+				<a href="http://frontend-taking-order.jaring.host"><img src=imgs/jsa-logo-scaled.png alt=""></a>
+				<a href="http://frontend-taking-order.jaring.host"><img class="logo-inverse" src=imgs/jsa-logo-scaled.png alt=""></a>
+			</div>
+			<nav class="navbar navbar-expand-lg navbar-light py-3">
+				<div class="container-fluid">
+					<button class="navbar-toggler menu_toggle_btn" type="button" data-target="#navbarSupportedContent"><i class="uil uil-bars"></i></button>
+					<div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-dark1 p-3 p-lg-0 mt1-5 mt-lg-0 mobileMenu" id="navbarSupportedContent">
+						<ul class="navbar-nav main_nav align-self-stretch">
+							<li class="nav-item"><a href="http://frontend-taking-order.jaring.host" class="nav-link" title="Home">Halaman Utama</a></li>
+							<li class="nav-item"><a href="http://frontend-taking-order.jaring.host/order/transaksi" class="nav-link" title="Contact">Pesanan Anda</a></li>
+							<li class="nav-item"><a href="http://frontend-taking-order.jaring.host/order/history" class="nav-link" title="Contact">Daftar Riwayat</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="header_right">
+				<ul>
+					<li>
+						<a href="http://frontend-taking-order.jaring.host/fax" class="offer-link"><i class="uil uil-question-circle"></i>Bantuan</a>
+					</li>
+					<li>
+						<a href="http://frontend-taking-order.jaring.host/contact" class="offer-link"><i class="uil uil-question-circle"></i>Kontak Kami</a>
+					</li>
+															<li class="ui dropdown">
+						<a href="#" class="opts_account">
+							<img src=imgs/img-5.jpg alt="">
+							<span class="user__name">MASUK</span>
+							<i class="uil uil-angle-down"></i>
+						</a>
+						<div class="menu dropdown_account">
+							<div class="night_mode_switch__btn">
+								<a href="#" id="night-mode" class="btn-night-mode">
+									<i class="uil uil-moon"></i> Night mode
+									<span class="btn-night-mode-switch">
+										<span class="uk-switch-button"></span>
+									</span>
+								</a>
+							</div>
+							<a href="http://frontend-taking-order.jaring.host/profile" class="item channel_item"><i class="uil uil-apps icon__1"></i>Profile</a>
+							<a href="http://frontend-taking-order.jaring.host/order/awaiting-payment" class="item channel_item">Menunggu Pembayaran</a>
+							<a href="http://frontend-taking-order.jaring.host/order/transaksi" class="item channel_item"><i class="uil uil-invoice icon__1"></i>Pesanan Anda</a>
+							<a href="http://frontend-taking-order.jaring.host/order/history" class="item channel_item"><i class="uil uil-heart icon__1"></i>Riwayat</a>
+							<a onclick="logout();" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Keluar</a>
+						</div>
+					</li>
+					 <li><span class="opts_account"><a href="http://frontend-taking-order.jaring.host/signin">Masuk</a></span></li>
+				 					</ul>
+			</div>
+		</div> -->
+		</div>
+		<div class="sub-header-group">
+			<div class="sub-header">
+				<div class="res_main_logo">
+					<a href="http://frontend-taking-order.jaring.host"><img src=imgs/logo.png alt=""></a>
+				</div>
+				<div class="main_logo" id="logo">
+					<a href="http://frontend-taking-order.jaring.host"><img src=imgs/logo.png alt=""></a>
+					<a href="http://frontend-taking-order.jaring.host"><img class="logo-inverse" src=imgs/logo.png
+							alt=""></a>
+				</div>
+				<nav style="background-color:#F4F8FB" class="navbar navbar-expand-lg navbar-light py-3">
+					<div class="container-fluid">
+						<button class="navbar-toggler menu_toggle_btn" type="button"
+							data-target="#navbarSupportedContent"><i class="uil uil-bars"></i></button>
+						<div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-dark1 p-3 p-lg-0 mt1-5 mt-lg-0 mobileMenu"
+							id="navbarSupportedContent">
+							<ul class="navbar-nav main_nav align-self-stretch">
+								<li class="nav-item"><a href="http://frontend-taking-order.jaring.host"
+										class="nav-link active" title="Halaman Utama">Halaman Utama</a></li>
+								<li class="nav-item"><a href="http://frontend-taking-order.jaring.host/order/transaksi"
+										class="nav-link" title="Lihat pesanan">Lihat pesanan</a></li>
+								<li class="nav-item"><a href="http://frontend-taking-order.jaring.host/order/history"
+										class="nav-link" title="Riwayat transaksi">Riwayat transaksi</a></li>
+								<li class="nav-item"><a href="http://frontend-taking-order.jaring.host/fax"
+										class="nav-link" title="Bantuan">Bantuan</a></li>
+								<li class="nav-item"><a href="http://frontend-taking-order.jaring.host/contact"
+										class="nav-link" title="Kontak Kami">Kontak Kami</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<!-- <div class="catey__icon">
+				<a href="#" class="cate__btn" data-toggle="modal" data-target="#category_model" title="Categories"><i class="uil uil-apps"></i></a>
+			</div> -->
+				<div class="header_cart order-1">
+					<a class="btn-cart-new" href="http://frontend-taking-order.jaring.host/signin"><span
+							style="padding: 5px;">MASUK</span>
+					</a>&nbsp;&nbsp;|</li>
+
+				</div>
+				<div class=" order-1">
+					<div class="ui dropdown">
+						<a href="#" class="option_links">
+							<img src=imgs/Notif.png alt="">
+						</a>
+						<div class="menu dropdown_account">
+							<a href="http://frontend-taking-order.jaring.host/order/awaiting-payment"
+								class="item channel_item">Menunggu Pembayaran<span id="countOrder1"
+									class="noti_count1"></span></a>
+						</div>
+					</div>
+				</div>
+				<div style="padding-right: 10px;" class=" order-1">
+					<a href="#" class="option_links pull-bs-canvas-left">
+						<img src=imgs/Keranjang.png alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<div style="background-color:#FFFFFF" class="wrapper">
+		<div style="background-color: #E29420;" class="section145">
+			<div
+				style="background-image: url('http://frontend-taking-order.jaring.host/asset-new/bg-banner.png'); background-size: 100% 100%; background-position: center center; background-repeat: no-repeat; ">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-12">
+							<div class="d-none d-lg-block nav-banner">
+								<img class="customNextBtn" src=imgs/left.png> </div> </div> <div
+									class="col-lg-8 col-md-8 col-12">
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="owl-carousel banner owl-theme">
+											<div class="item">
+												<div class="banner-home">
+													<img src=imgs/banner1.png alt="">
+												</div>
+											</div>
+											<div class="item">
+												<div class="banner-home">
+													<img src=imgs/banner1.png alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-12">
+								<div class="d-none d-lg-block nav-banner">
+									<img class="customNextBtn" src=imgs/right.png> </div> </div> </div> <div
+										class="row">
+									<div class="col-lg-12 col-sm-12">
+										<div style="border: 0px;" class="card">
+											<div style="background-color: #F6F9FF; border-bottom: 0px;"
+												class="card-header">
+												<div class="main-title-tt">
+													<div class="main-title-left">
+														<div class="text-pasar">Pertama, mari cari pasar terdekat di
+															sekitarmu
+															<br>
+														</div>
+													</div>
+													<div style="cursor: pointer; background: #F6F9FF;border: 1px solid rgba(0, 0, 0, 0.5);box-sizing: border-box;border-radius: 5px; padding:5px"
+														class="text-pasar pull-bs-canvas-right">Filter</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-12">
+								<div style="border: 0px;" class="card">
+									<div style="border: 0px; box-shadow: 4.84419px 4.84419px 20px rgba(0, 0, 0, 0.1); border-radius: 5.81303px;"
+										class="card-body">
+										<div class="text-pasar">Semua Pasar :</div>
+										<center>
+											<div id="loading" class="lds-spinner loader">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</center>
+										<div id="cate"></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 col-12">
+								<br><br>
+								<img style="height:100%; width: 100%;" src=imgs/bg-guide.png> </div> <div
+									class="col-lg-12 col-md-12 col-12">
+								<hr>
+								<div class="main-title-tt">
+									<div class="main-title-left">
+										<div class="text-title-card">Produk Diskon</div>
+									</div>
+									<div class="text-see-all">Lihat semua</div>
+								</div>
+
+								<form id="form_cart">
+									<div id="product_discount" class="row"></div>
+								</form>
+								<div class="row">
+									<div class="col-md-12 col-lg-12 col-12">
+										<center>
+											<div id="loading_discount" class="lds-spinner">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</center>
+									</div>
+									<div class="col-lg-12 col-md-12">
+
+										<nav aria-label="Page navigation example">
+											<ul id="links_discount" class="pagination justify-content-end">
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bg-banner-new">
+							<div
+								style="background-image: url('http://frontend-taking-order.jaring.host/asset-new/bg-banner.png'); background-size: 100% 100%; background-position: center center; background-repeat: no-repeat;">
+								<div class="container">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-6">
+											<div class="text-tag">Diskon Spesial Pasar-Pasar Tertentu</div>
+											<img class="d-none d-lg-block" style="width: 100%" src=imgs/manusia.png>
+												</div> <div class="col-lg-8 col-md-8 col-6">
+											<div id="list_promo"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<div id="chartmodal" class="header-cate-model main-gambo-model modal" tabindex="-1"
+									role="dialog" aria-modal="false">
+									<div class="modal-dialog category-area" role="document">
+										<div class="category-area-inner">
+											<div class="modal-header">
+												<button type="button" class="close btn-close" data-dismiss="modal"
+													aria-label="Close">
+													<i class="uil uil-multiply"></i>
+												</button>
+											</div>
+											<div class="category-model-content modal-content">
+												<div class="delivery-address-bg">
+													<div class="title585">
+														<img src=imgs/notif_keranjang.png> </div> </div> </div> </div>
+															</div> </div> </div> </div> <!-- <div
+															style="background-color: #E29420;" class="section145">
+														<div
+															style="background-image: url('http://frontend-taking-order.jaring.host/asset-new/bg-banner.png'); background-size: 100%; background-position: center center; background-repeat: no-repeat; ">
+															<div class="container">
+																<div style="background:#fff;border-radius:10px;padding:20px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;"
+																	class="row">
+																	<div class="col-md-12">
+																		<div class="main-title-tt">
+																			<div class="main-title-left">
+																				<h1 style="color: #f55d2c;">Pertama,
+																					mari cari pasar terdekat di
+																					sekitarmu</h1>
+																				<br>
+																			</div><a href="#"
+																				class="filter-btn pull-bs-canvas-right">Filters</a>
+																		</div>
+																	</div>
+																	<div class="col-md-12">
+																		<h3>Semua Pasar :</h3>
+																		<center>
+																			<div id="loading"
+																				class="lds-spinner loader">
+																				<div></div>
+																				<div></div>
+																				<div></div>
+																				<div></div>
+																				<div></div>
+																				<div></div>
+																				<div></div>
+																				<div></div>
+																				<div></div>
+																				<div></div>
+																				<div></div>
+																				<div></div>
+																			</div>
+																		</center>
+																		<div id="cate"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div> -->
+
+
+													<!-- <div class="container">
+     <div style="background:#fff;border-radius:10px;padding:20px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;" class="row">
+      <div class="col-md-12">
+        <div class="main-title-tt">
+          <div class="main-title-left">
+            <h1 style="color: #f55d2c;">Pertama, mari cari pasar terdekat di sekitarmu</h1>
+            <br>
+          </div><a href="#" class="filter-btn pull-bs-canvas-right">Filters</a>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <h3>Semua Pasar :</h3>
+        <center>
+          <div id="loading" class="lds-spinner loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </center>
+        <div  id="cate"></div>
+      </div>
+    </div>
+</div>
+<div class="about-steps-group">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+       <img src=imgs/bg-guide.png>
+     </div>
+   </div>
+ </div>
+</div> -->
+
+													<!-- <div style="background-color: #f55d2c" class="about-steps-group">
+  <div class="container">
+    <div class="row">
+     <div class="col-lg-6">
+      <div class="default-title left-text">
+        <br><br><br>
+
+      </div>
+      <div class="about-content">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 style="color: #FFF; font-size: 30px">Belanja online dari pasar-pasar favoritmu, Kebutuhan rumahmu dipilih langsung oleh personal shopper kami</h1>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="about-img">
+        <img src=imgs/buah.png alt="">
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
+  <div style="background:#fff;border-radius:10px;padding:20px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;" class="row">
+    <div class="col-md-12">
+      <div class="main-title-tt">
+        <div class="main-title-left">
+          <h1 style="color: #f55d2c;">Pertama, mari cari pasar terdekat di sekitarmu</h1>
+          <br>
+        </div><a href="#" class="filter-btn pull-bs-canvas-right">Filters</a>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <h3>Semua Pasar :</h3>
+      <center>
+        <div id="loading" class="lds-spinner loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </center>
+      <div  id="cate"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <hr style="border : 1px solid #FFF">
+    </div>
+  </div>
+  <div class="row" id="banner"></div>
+  <div class="row">
+    <div class="col-md-12">
+     <hr style="border : 1px solid #FFF">
+     <h3 style="color: #FFF; text-align: center;">Bagaimana Belanja di Taking Order?</h3>
+   </div>
+ </div>
+ <div class="row">
+  <div class="col-lg-3 col-md-3 col-6">
+    <div class="about-step">
+      <div class="about-step-img">
+        <img style="width: 100px;height: 100px" src=imgs/market.png alt="">
+      </div>
+      <h4 style="color: #FFF;">1</h4>
+      <h4 style="color: #FFF;">Pilih Pasar</h4>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-6">
+    <div class="about-step">
+      <div class="about-step-img">
+        <img style="width: 100px;height: 100px" src=imgs/cart.png alt="">
+      </div>
+      <h4 style="color: #FFF;">2</h4>
+      <h4 style="color: #FFF;">Pilih produk</h4>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-6">
+    <div class="about-step">
+      <div class="about-step-img">
+        <img style="width: 100px;height: 100px" src=imgs/wallet.png alt="">
+      </div>
+      <h4 style="color: #FFF;">3</h4>
+      <h4 style="color: #FFF;">Lakukan Pembayaran</h4>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-6">
+    <div class="about-step">
+      <div class="about-step-img">
+        <img style="width: 100px;height: 100px" src=imgs/pickup.png alt="">
+      </div>
+      <h4 style="color: #FFF;">4</h4>
+      <h4 style="color: #FFF;">Kirim</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+   <hr style="border : 1px solid #FFF">
+ </div>
+</div>
+<div style="background-color:#FFF; border-radius:10px;padding:20px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;" class="row">
+  <div class="col-md-12">
+    <h3>Paroduk Diskon</h3>
+    <form id="form_cart">
+      <div id="product_discount" class="row"></div>
+    </form>
+    <div class="row">
+      <div class="col-md-12 col-lg-12 col-12">
+        <center>
+          <div id="loading_discount" class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </center>
+      </div>
+      <div class="col-lg-12 col-md-12">
+        <nav aria-label="Page navigation example">
+          <ul id="links_discount" class="pagination justify-content-end">
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+   <hr style="border : 1px solid #FFF">
+   
+ </div>
+</div>
+<div style="background-color:#9FD040; border-radius:10px;padding:20px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;" class="row">
+  <div class="col-md-2 col-6">
+    <h2 style="color: #FFF;">Diskon Spesial di pasar-pasar tertentu</h2>
+    <img style="width: 100%" src=imgs/price-tag.svg>
+  </div>
+  <div class="col-md-10 col-6" id="list_promo">
+
+  </div>
+</div>
+
+</div>
+</div> -->
+
+
+												</div>
+
+
+												<footer style="background-color:#F4F8FB" class="footer">
+													<div class="footer-second-row">
+														<div class="container">
+															<div class="row">
+																<div class="col-lg-4 col-md-6 col-sm-6">
+																	<div class="second-row-item">
+																		<img src=imgs/logo.png alt="">
+																		<h4>PT. Jaring Solusi Aplikasi</h4>
+																		<h4>
+																			Comitment, Integrity, Future.Kami berbicara
+																			tentang digital di masa depan
+																		</h4>
+																	</div>
+																</div>
+																<div class="col-lg-4 col-md-6 col-sm-6">
+																	<div class="second-row-item-payment">
+																	</div>
+																</div>
+																<div class="col-lg-4 col-md-6 col-sm-6">
+
+																	<div class="second-row-item-payment">
+																		<h4>Pembayaran</h4>
+																		<div class="footer-payments">
+																			<ul id="paypal-gateway"
+																				class="financial-institutes">
+																				<li class="financial-institutes__logo">
+																					<img style="background-image: url('http://frontend-taking-order.jaring.host/images/payment/img-BCA.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; width: 100px; height: 30px"
+																						src=imgs/tr-ev.png> </li> <li
+																						class="financial-institutes__logo">
+																					<img style="background-image: url('http://frontend-taking-order.jaring.host/images/payment/img-BNI.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; width: 100px; height: 25px"
+																						src=imgs/tr-ev.png> </li> <li
+																						class="financial-institutes__logo">
+																					<img style="background-image: url('http://frontend-taking-order.jaring.host/images/payment/img-BRI.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; width: 100px; height: 25px"
+																						src=imgs/tr-ev.png> </li> <li
+																						class="financial-institutes__logo">
+																					<img style="background-image: url('http://frontend-taking-order.jaring.host/images/payment/img-CIMB.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; width: 100px; height: 25px"
+																						src=imgs/tr-ev.png> </li> <li
+																						class="financial-institutes__logo">
+																					<img style="background-image: url('http://frontend-taking-order.jaring.host/images/payment/img-Danamon.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; width: 100px; height: 25px"
+																						src=imgs/tr-ev.png> </li> <li
+																						class="financial-institutes__logo">
+																					<img style="background-image: url('http://frontend-taking-order.jaring.host/images/payment/img-HanaBank.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; width: 100px; height: 25px"
+																						src=imgs/tr-ev.png> </li> <li
+																						class="financial-institutes__logo">
+																					<img style="background-image: url('http://frontend-taking-order.jaring.host/images/payment/img-mandiri.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; width: 100px; height: 25px"
+																						src=imgs/tr-ev.png> </li> <li
+																						class="financial-institutes__logo">
+																					<img style="background-image: url('http://frontend-taking-order.jaring.host/images/payment/img-Maybank.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; width: 100px; height: 25px"
+																						src=imgs/tr-ev.png> </li> <li
+																						class="financial-institutes__logo">
+																					<img style="background-image: url('http://frontend-taking-order.jaring.host/images/payment/img-PermataBank.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; width: 100px; height: 25px"
+																						src=imgs/tr-ev.png> </li> <li
+																						class="financial-institutes__logo">
+																					<img style="background-image: url('http://frontend-taking-order.jaring.host/images/payment/img-QRIS.png'); background-size: contain; background-position: center center; background-repeat: no-repeat; width: 100px; height: 25px"
+																						src=imgs/tr-ev.png> </li> </ul>
+																						</div> </div> <div
+																						class="second-row-item-payment">
+
+																		</div>
+																		<div class="second-row-item-payment">
+																			<!-- <h4>Newsletter</h4>
+						<div class="newsletter-input">
+							<input id="email" name="email" type="text" placeholder="Email Address" class="form-control input-md" required="">
+							<button class="newsletter-btn hover-btn" type="submit"><i class="uil uil-telegram-alt"></i></button>
+						</div> -->
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div style="background-color:#F4F8FB" class="footer-last-row">
+															<div class="container">
+																<div class="row">
+																	<div class="col-lg-12 col-md-12 col-12">
+																		<hr>
+																		<div class="footer-bottom-links">
+																			<ul>
+																				<li><a
+																						href="http://frontend-taking-order.jaring.host/about">Tentang</a>
+																				</li>
+																				<li><a
+																						href="http://frontend-taking-order.jaring.host/contact">Kontak</a>
+																				</li>
+																				<li><a
+																						href="http://frontend-taking-order.jaring.host/privacy-policy">Kebijakan
+																						Pribadi</a></li>
+																				<li><a
+																						href="http://frontend-taking-order.jaring.host/term">Syarat
+																						& Ketentuan</a></li>
+																				<li><a
+																						href="http://frontend-taking-order.jaring.host/refund-return">Kebijakan
+																						Pengembalian Dana &
+																						Pengembalian</a></li>
+																			</ul>
+																		</div>
+																		<div class="copyright-text">
+																			<i class="uil uil-copyright"></i>Copyright
+																			2021 <b>PT.Jaring Solusi Aplikasi</b> . All
+																			rights reserved
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+												</footer>
+												<script type="text/javascript">
+													var base_url = `${window.location.origin}`;
+												</script>
+
+
+												<script src="js/jquery-3.3.1.min.js"></script>
+												<script src="js/select2.js"></script>
+												<script src="js/bootstrap.bundle.min.js"></script>
+												<script src="js/owl.carousel.js"></script>
+												<script src="js/semantic.min.js"></script>
+												<script src="js/jquery.countdown.min.js"></script>
+												<script src="js/custom.js"></script>
+												<script src="js/offset_overlay.js"></script>
+												<script src="js/night-mode.js"></script>
+												<script src="js/logout.js"></script>
+												<script src="js/cart.js"></script>
+												<script src="js/jquery.classyqr.js"></script>
+
+
+												<script src="js/filter_market.js"></script>
+												<script src="js/home.js"></script>
+</body>
+
+</html>
