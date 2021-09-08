@@ -24,6 +24,8 @@
 
 .carousel-item img {
   height: 800px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer-lift img {
