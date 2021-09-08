@@ -27,15 +27,28 @@
 
 .carousel-item{
     img{
-        height: 900px;
+        height: 800px;
     }
 }
 
 .footer-lift{
     img{
-        height: 200px;
+        height: 100px;
     }
 }
-
-
-
+//footer
+ .font{
+     color: white;
+ }
+.list-unstyled{
+        li{
+            color: white; 
+            font-family: 'Poppins', sans-serif;
+        }
+}
+.col-auto{
+    color: white;
+}
+.container-bg{
+    background-color: #A53692;
+}
