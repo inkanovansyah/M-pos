@@ -1,6 +1,6 @@
 .navbar-brand{
         img{
-            height: 40px;
+            height: 80px;
         }
 }
 .body{
@@ -8,14 +8,34 @@
 }
 
 .d-flex{
+    
     .btn{
+        font-family: 'Poppins', sans-serif;
         background-color: #A53692;
         border-radius: 10px;
+        color: wheat;
+        
+        &:hover{
+           background-color: #CA42B3;
+           box-shadow: 0px 15px 20px rgba(240, 81, 240, 0.4);
+           transform: translateY(-7px);
+           color: white; 
+        }
+        
     }
 }
 
 .carousel-item{
     img{
-        height: 800px;
+        height: 900px;
     }
 }
+
+.footer-lift{
+    img{
+        height: 200px;
+    }
+}
+
+
+
