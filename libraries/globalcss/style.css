@@ -4,10 +4,11 @@
 }
 .btn-store {
   color: #777777;
-  min-width: 254px;
+  min-width: 230px;
   padding: 12px 20px !important;
   border-color: #dddddd !important;
   margin-right: 10px;
+  margin-top: 10px;
 }
 
 .btn-store:focus, 
